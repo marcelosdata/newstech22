@@ -150,3 +150,65 @@ hr{
   width: 40%;
   padding: 90px 0 0 40px;
 }
+
+/*Social*/
+.social-media{
+  margin: 50px;
+}
+.social-media h3{
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a{
+  margin: 0 20px;
+  display: inline-block;
+}
+
+.links a i{
+  font-size: 2rem;
+}
+
+/*Footer Links*/
+.footer-links{
+  background-color: #1a171a;
+  color: aliceblue;
+  font-size: 0.8rem;
+  padding: 35px 0;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-container ul{
+  margin: 0 auto;
+}
+
+.footer-container ul li{
+  line-height: 2.7;
+}
+
+footer{
+  background-color: #1a171a;
+}
+
+footer h4{
+  color: aliceblue;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
