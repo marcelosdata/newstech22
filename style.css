@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+.menu-btn{
+  cursor: pointer;
+  top: 15px;
+  right: 30px;
+  position: absolute;
+  z-index: 2;
+  font-size: 1.4rem;
+  display: none;
+}
+
 body{
   background-color: black;
   color: #fff;
@@ -58,6 +68,10 @@ ul {
   border-bottom: 3px solid #fff;
 }
 
+.nav-menu-right{
+  margin-right: 40px;
+}
+
 .main-elements {
   margin-left: 10px;
   flex:1;
@@ -75,7 +89,7 @@ hr{
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 50px;
+  padding: 50px;
   margin-bottom: 20px;
 }
 
@@ -148,7 +162,8 @@ hr{
 .card-banner-one .content,
 .card-banner-two .content{
   width: 40%;
-  padding: 90px 0 0 40px;
+  padding: 5rem 0 0 3rem;
+
 }
 
 /*Social*/
@@ -211,4 +226,52 @@ footer h4{
   margin: 0 auto;
   text-align: center;
   padding-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+
+  .menu-btn{
+    display: block;
+  }
+  .nav-main ul.main-elements{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: #212121;
+    opacity: 0.9;
+    transform: translateX(-400px);
+    height: 100%;
+    padding: 30px;
+    transition: 0.8s ease-in-out;
+  }
+
+  ul.main-elements.show{
+    transform: translateX(-20px) ;
+  }
+
+  .nav-main .ul.main-elements li{
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .ul.main-elements li{
+    font-size: 14px;
+    padding: 20px;
+  }
+  
+  .news-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .card-banner-one content,
+  .card-banner-two content {
+    width: 80%;
+  }
+
+  .footer-container .footer-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+  
 }
